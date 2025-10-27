@@ -13,6 +13,22 @@ const MAPPING = {
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  'arrow.up.doc': 'assignment-returned',
+  'book.fill': 'book',
+  'captions.bubble.fill': 'speaker-notes',
+  'list.bullet.rectangle.fill': 'list-alt',
+  'diamond.fill': 'diamond',
+  'trash': 'delete-outline',
+  'arrow.clockwise': 'refresh',
+  'pencil': 'edit',
+  'xmark': 'close',
+  'arrow.up': 'share',
+  'tray.and.arrow.down': 'save',
+  'info.circle': 'info',
+  'phone.fill': 'phone',
+  'chevron.down': 'keyboard-arrow-down',
+  'camera.fill': 'camera'
+
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],
@@ -32,6 +48,7 @@ export function IconSymbol({
   size = 24,
   color,
   style,
+  weight,
 }: {
   name: IconSymbolName;
   size?: number;
